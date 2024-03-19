@@ -12,16 +12,16 @@ const answer = await inquirer.prompt([
     },
 ]);
 if (answer.operator == "Addition") {
-    console.log(chalk.blue(`\n\t Addition Of Both Numbers Are ${answer.firstnumber + answer.secondnumber}`));
+    console.log(chalk.blue(`\n\t Answer Of ${answer.firstnumber} + ${answer.secondnumber} is  ${answer.firstnumber + answer.secondnumber}`));
 }
 else if (answer.operator == "Subtraction") {
-    console.log(chalk.green(`\n\t Addition Of Both Numbers Are ${answer.firstnumber - answer.secondnumber}`));
+    console.log(chalk.green(`\n\t Answer Of ${answer.firstnumber} - ${answer.secondnumber} is ${answer.firstnumber - answer.secondnumber}`));
 }
 else if (answer.operator == "Multiplication") {
-    console.log(chalk.yellow(`\n\t Addition Of Both Numbers Are ${answer.firstnumber * answer.secondnumber}`));
+    console.log(chalk.yellow(`\n\t Answer Of ${answer.firstnumber} * ${answer.secondnumber} is  ${answer.firstnumber * answer.secondnumber}`));
 }
 else if (answer.operator == "Division") {
-    console.log(chalk.white(`\n\t Addition Of Both Numbers Are ${answer.firstnumber / answer.secondnumber}`));
+    console.log(chalk.white(`\n\t Answer Of ${answer.firstnumber} / ${answer.secondnumber} is  ${answer.firstnumber / answer.secondnumber}`));
 }
 else {
     console.log("Select Valid");
